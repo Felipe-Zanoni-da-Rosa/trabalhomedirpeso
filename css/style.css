@@ -88,6 +88,7 @@ footer h1 span{
     border: none;
     border-bottom: 1px solid #515151;
     background: transparent;
+    color: #fff;
    }
    
    .input:focus {

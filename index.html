@@ -19,9 +19,20 @@
     </nav>
     <form>
       <div class="inputs">
-        <input type="text" id="inNome">
-        <input type="number" min="0" step="0.01" id="inAltura" placeholder="Coloque sua altura" required>
+        <div class="group">
+          <input required="" type="text" class="input" id="inNome">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+        <div class="group">
+          <input required="" type="text" class="input" id="inAltura">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Altura</label>
+        </div>
       </div><!--Input-->
+
       <div class="genero">
         <div class="radio-container">
           <div class="radio-wrapper">
@@ -42,6 +53,7 @@
         </div>
       </div><!--Esolha de genero-->
     </form>
+
     <footer>
       <h1>
         <p>

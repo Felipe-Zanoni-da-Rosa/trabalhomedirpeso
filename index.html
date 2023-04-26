@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="website icon" type="image/png" href="/image/icon.png" />
+    <title>Programa Peso Ideal</title>
+    <script src="/script/script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <h1>Programa Peso Ideal</h1>
+    </nav>
+    <form>
+      <div class="inputs">
+        <input type="text" id="inNome">
+        <input type="number" min="0" step="0.01" id="inAltura" placeholder="Coloque sua altura" required>
+      </div><!--Input-->
+      <div class="genero">
+        <div class="radio-container">
+          <div class="radio-wrapper">
+            <label class="radio-button">
+              <input type="radio" name="radio-group" id="option1">
+              <span class="radio-checkmark"></span>
+              <span class="radio-label">Homen</span>
+            </label>
+          </div>
+        
+          <div class="radio-wrapper">
+            <label class="radio-button">
+              <input type="radio" name="radio-group" id="option2">
+              <span class="radio-checkmark"></span>
+              <span class="radio-label">Mulher</span>
+            </label>
+          </div>
+        </div>
+      </div><!--Esolha de genero-->
+    </form>
+    <footer>
+      <h1>
+        <p>
+          Projeto feito por  <span>Felipe Zanoni da Rosa, Bryan Rodrigues de Andrade</span>
+        </p>
+      </h1>
+    </footer>
+  </body>
+</html>

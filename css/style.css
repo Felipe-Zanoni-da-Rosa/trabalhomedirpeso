@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", san;
   background-color: #191919;
+  display: flex;
+  justify-content: center;
 }
 nav h1 {
   color: #fff;

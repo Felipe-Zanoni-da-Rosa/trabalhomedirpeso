@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", san;
   background-color: #191919;
-  display: flex;
   justify-content: center;
 }
 nav h1 {
@@ -84,7 +83,7 @@ footer h1 span{
    
    .input {
     font-size: 16px;
-    padding: 10px 10px 10px 5px;
+    padding: 20px 20px 20px 10px;
     display: block;
     width: 200px;
     border: none;
@@ -158,6 +157,7 @@ footer h1 span{
    .input:focus ~ .highlight {
     animation: inputHighlighter 0.3s ease;
    }
+   
    
    @keyframes inputHighlighter {
     from {

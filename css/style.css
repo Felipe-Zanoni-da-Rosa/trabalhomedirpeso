@@ -23,3 +23,9 @@ footer h1 span{
 .genero{
   color: #fff;
 }
+.geneross{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}

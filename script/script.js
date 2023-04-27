@@ -5,15 +5,14 @@ function calcularPesoIdeal() {
   let altura = document.getElementById("inAltura").value; // a altura é convertida de cm para metros
   const peso = parseFloat(document.getElementById("inPeso").value);
   const genero = document.querySelector('input[name="gender"]:checked').value; // seleciona o valor do gênero marcado no formulário
-  let virgola;
+
+// Verifica o formato da altura
   if (altura.includes(',')) {
     altura = altura.replace(',', '.');
-    virgola = true
     altura = parseFloat(altura)
     // aqui você pode usar a variável alturaComPonto que contém a altura com ponto
   }else if(altura >= 3){
     altura = altura / 100
-    virgola = false
   }
   // inicializa as variáveis pesoIdeal e resultado
   let pesoIdeal = 0;

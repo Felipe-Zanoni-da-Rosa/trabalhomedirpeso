@@ -2,10 +2,13 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="O Programa Peso Ideal ajuda você a alcançar seus objetivos de perda de peso de forma saudável e eficaz. Saiba mais sobre nossos planos personalizados e calcule seu peso ideal." />
+    <meta name="keywords" content="programa peso ideal, perda de peso, dieta, saúde, bem-estar, peso ideal" />
+    <meta name="author" content="Felipe Zanoni da Rosa, Bryan Andrade" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="website icon" type="image/png" href="/image/icon.png" />
+    <link rel="icon" type="image/png" href="/image/icon.png" />
     <title>Programa Peso Ideal</title>
     <script src="/script/script.js" defer></script>
     <link
@@ -17,23 +20,100 @@
     <nav>
       <h1>Programa Peso Ideal</h1>
     </nav>
-    <form>
+
+    <form class="forms">
       <div class="inputs">
-          <input required="" type="text" class="input" id="inNome">
-          <input required="" type="text" class="input" id="inAltura">
+        <div class="form__group field">
+          <input type="input" class="form__field" required placeholder="Name" id="inNome" name="inNome" autocomplete="name">
+          <label for="inNome" class="form__label">Name</label>
+        </div>
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Altura" required id="inAltura" name="inAltura">
+          <label for="inAltura" class="form__label">Altura (cm)</label>
+        </div>
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Peso" required id="inPeso" name="inPeso">
+          <label for="inPeso" class="form__label">Peso em kg</label>
+        </div>
+
+        <button class="botao" type="button" onclick="calcularPesoIdeal()">
+          <span>Calcular</span>
+        </button>
       </div><!--Input-->
       <div class="geneross">
-        <input type="radio" name="genero" id="male" class="genero"> Homen
-        <input type="radio" name="genero" id="female" class="genero"> Mulher
-      </div><!--Esolha de genero-->
-    </form>
 
-    <footer>
-      <h1>
-        <p>
-          Projeto feito por  <span>Felipe Zanoni da Rosa, Bryan Rodrigues de Andrade</span>
-        </p>
-      </h1>
-    </footer>
+          <div class="radio-inputs">
+            <label>
+              <input class="radio-input" type="radio" name="gender" id="female" value="female">
+                <span class="radio-tile">
+                  <span class="radio-icon">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                    preserveAspectRatio="xMidYMid meet">
+                   
+                   <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                   fill="#000000" stroke="none">
+                   <path d="M2470 5109 c-120 -23 -245 -121 -300 -233 -144 -291 66 -630 390
+                   -630 214 0 394 152 430 363 51 301 -217 559 -520 500z"/>
+                   <path d="M2150 4089 c-147 -19 -273 -122 -354 -292 -24 -50 -110 -279 -191
+                   -507 -81 -228 -192 -538 -246 -688 -67 -184 -99 -286 -99 -315 0 -60 36 -125
+                   88 -162 38 -26 52 -30 112 -30 60 0 74 4 111 30 25 18 51 48 65 75 12 25 106
+                   280 209 567 l188 522 27 -42 c14 -23 34 -48 43 -56 14 -11 17 -35 17 -157 l0
+                   -144 -175 -441 c-96 -243 -175 -455 -175 -470 0 -53 31 -70 200 -112 l55 -13
+                   5 -845 5 -844 27 -46 c82 -139 279 -157 386 -35 63 72 62 62 62 898 l0 758 50
+                   0 50 0 0 -758 c0 -836 -1 -826 62 -898 107 -122 304 -104 386 35 l27 46 5 844
+                   5 845 55 13 c166 41 200 60 200 114 0 14 -79 225 -175 468 l-175 441 0 144 c0
+                   122 3 146 17 157 9 8 29 33 43 56 l27 42 188 -522 c103 -287 197 -542 209
+                   -567 14 -27 40 -57 65 -75 37 -26 51 -30 111 -30 60 0 74 4 112 30 52 37 88
+                   102 88 162 0 29 -32 131 -99 315 -54 150 -165 460 -246 688 -81 228 -167 457
+                   -191 507 -84 175 -205 272 -364 293 -90 11 -719 11 -810 -1z"/>
+                   </g>
+                   </svg>
+                  </span>
+
+                </span>
+            </label>
+            <label>
+              <input checked="" class="radio-input" type="radio" name="gender" id="male" value="male">
+              <span class="radio-tile">
+                <span class="radio-icon">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                  width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                  preserveAspectRatio="xMidYMid meet">
+                 
+                 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                 fill="#000000" stroke="none">
+                 <path d="M2443 5106 c-90 -22 -164 -65 -239 -140 -105 -107 -146 -206 -146
+                 -356 1 -381 405 -619 743 -439 236 126 330 422 210 664 -106 213 -342 326
+                 -568 271z"/>
+                 <path d="M1871 3899 c-172 -34 -318 -182 -351 -358 -6 -34 -10 -341 -10 -823
+                 0 -671 2 -773 15 -806 31 -73 89 -114 164 -115 65 -1 118 28 152 82 l29 45 0
+                 643 0 643 24 15 c19 13 39 13 58 1 2 0 5 -678 8 -1506 l5 -1505 21 -45 c47
+                 -99 143 -160 254 -160 111 1 206 62 251 163 l24 52 3 872 c3 856 3 873 22 883
+                 14 8 26 8 40 0 19 -10 19 -27 22 -888 l3 -877 28 -57 c62 -125 195 -183 332
+                 -144 45 14 69 29 110 70 92 92 85 -45 85 1642 0 1334 2 1484 16 1498 19 20 24
+                 20 52 0 l22 -15 0 -640 c0 -618 1 -641 20 -679 54 -107 204 -127 287 -38 54
+                 58 53 35 53 866 0 482 -4 789 -10 823 -34 180 -179 325 -359 359 -66 12 -1306
+                 12 -1370 -1z"/>
+                 </g>
+                 </svg>
+                </span>
+              </span>
+            </label>
+        </div>
+        </div><!--Escolha de gênero-->
+        
+      <center>
+        <div class="resultados">
+
+          <h2 id="resultado">
+            <label id="fim">
+              <h1><img src="/image/up-arrow.png" alt="Seta" width="150px" height="150px"></h1>
+              Clique para calcular
+            </label>
+          </h2>
+      </center>
+      </div>
+    </form>
   </body>
 </html>
